@@ -1,4 +1,4 @@
-package homeworkTask1;
+package week4HomeworkTask1;
 
 public class UserGroup {
     private User[] users;
@@ -14,6 +14,14 @@ public class UserGroup {
         else{
             System.out.println("Invalid argument");
         }
+    }
+
+    public User[] getUsers() {
+        return users;
+    }
+
+    public void setUsers(User[] users) {
+        this.users = users;
     }
 
     public void addUser(User user) {
