@@ -1,6 +1,5 @@
 package week4HomeworkTask2;
 
-import java.util.Objects;
 
 public final class Triangle {
     private final Point point1;

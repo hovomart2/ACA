@@ -25,10 +25,11 @@ public class UserGroup {
     }
 
     public void addUser(User user) {
-        if (this.users.length < 10) {
+        if (this.users[9]==null) {
             for (int i = 0; i < 10; i++) {
                 if (users[i] == null) {
                     users[i] = user;
+                    break;
                 }
             }
         } else {
