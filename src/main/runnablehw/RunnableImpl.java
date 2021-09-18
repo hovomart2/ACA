@@ -3,6 +3,7 @@ package runnablehw;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.UUID;
 
 public class RunnableImpl implements Runnable {
     private final File file;
@@ -19,7 +20,7 @@ public class RunnableImpl implements Runnable {
             e.printStackTrace();
         }
         for (int i = 0; i < 10_000; i++) {
-            printWriter.println("Random line");
+            printWriter.println(UUID.randomUUID().toString());
         }
         printWriter.close();
     }
